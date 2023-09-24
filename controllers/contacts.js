@@ -15,7 +15,7 @@ const getSingle = async (req, res, next) => {
   // If you have the route / contacts /:id, then the “id” property is available as req.params.id
   const result = await mongodb
     .getDb()
-    .db()
+    .db('contacts')
     .collection('contacts')
     .find({ _id: userId });  // db.collection.find(query, projection, options)
   result.toArray().then((lists) => {
