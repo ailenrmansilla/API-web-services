@@ -1,0 +1,23 @@
+GET http://localhost:8080/contacts HTTP/1.1
+###
+POST http://localhost:8080/contacts HTTP/1.1
+### That POST only creates an _id when I test it
+DELETE http://localhost:8080/contacts/651793fa740e794e8e475fe0 HTTP/1.1
+
+### POST Create contact
+POST https://cse341-instructor.herokuapp.com/contacts HTTP/1.1 content-type: application/json
+{
+"firstName":"Ashley", "lastName":"Weaver", "email":"aWeaver@test.com", "favoriteColor":"Brown", "birthday":"06/19/2000"
+}
+### Error: Header must be a valid HTTP token ["{"]
+
+
+### PUT contact 
+PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 content-type: application/json
+{
+"firstName":"Sarah", "lastName":"Birch", "email":"test@gmail.com", "favoriteColor":"Green", "birthday":"12/12/20"
+} 
+### Error: Header must be a valid HTTP token ["{"]
+
+###
+GET https://cse-341-vtdf.onrender.com HTTP/1.1
