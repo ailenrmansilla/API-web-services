@@ -10,7 +10,16 @@ POST https://cse341-instructor.herokuapp.com/contacts HTTP/1.1 content-type: app
 "firstName":"Ashley", "lastName":"Weaver", "email":"aWeaver@test.com", "favoriteColor":"Brown", "birthday":"06/19/2000"
 }
 ### Error: Header must be a valid HTTP token ["{"]
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
 
+{
+    "firstName": "Contact",
+    "lastName" : "Example",
+    "email" : "user@example.com",
+    "favoriteColor" : "red",
+    "birthday" : "09/30/2023"
+}
 
 ### PUT contact 
 PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 content-type: application/json
@@ -20,4 +29,4 @@ PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 content-typ
 ### Error: Header must be a valid HTTP token ["{"]
 
 ###
-GET https://cse-341-vtdf.onrender.com HTTP/1.1
+GET https://cse-341-vtdf.onrender.com/contacts HTTP/1.1
