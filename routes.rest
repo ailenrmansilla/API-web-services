@@ -30,3 +30,5 @@ PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 content-typ
 
 ###
 GET https://cse-341-vtdf.onrender.com/contacts HTTP/1.1
+###
+GET https://cse-341-vtdf.onrender.com/api-docs HTTP/1.1
