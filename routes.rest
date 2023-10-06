@@ -2,7 +2,7 @@ GET http://localhost:8080/contacts HTTP/1.1
 ###
 POST http://localhost:8080/contacts HTTP/1.1
 ### That POST only creates an _id when I test it
-DELETE http://localhost:8080/contacts/651793fa740e794e8e475fe0 HTTP/1.1
+DELETE http://localhost:8080/contacts/651793cb740e794e8e475fdf HTTP/1.1
 
 ### POST Create contact
 POST http://localhost:8080/contacts HTTP/1.1
