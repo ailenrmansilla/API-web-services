@@ -5,13 +5,9 @@ POST http://localhost:8080/contacts HTTP/1.1
 DELETE http://localhost:8080/contacts/651793fa740e794e8e475fe0 HTTP/1.1
 
 ### POST Create contact
-POST https://cse341-instructor.herokuapp.com/contacts HTTP/1.1 content-type: application/json
-{
-"firstName":"Ashley", "lastName":"Weaver", "email":"aWeaver@test.com", "favoriteColor":"Brown", "birthday":"06/19/2000"
-}
-### Error: Header must be a valid HTTP token ["{"]
 POST http://localhost:8080/contacts HTTP/1.1
-content-type: application/json
+content-type: application/json 
+### content-type goes below POST line
 
 {
     "firstName": "Contact",
@@ -21,14 +17,7 @@ content-type: application/json
     "birthday" : "09/30/2023"
 }
 
-### PUT contact 
-PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 content-type: application/json
-{
-"firstName":"Sarah", "lastName":"Birch", "email":"test@gmail.com", "favoriteColor":"Green", "birthday":"12/12/20"
-} 
-### Error: Header must be a valid HTTP token ["{"]
-
-###
+### Render
 GET https://cse-341-vtdf.onrender.com/contacts HTTP/1.1
-###
+### Api Docs deployed in Render
 GET https://cse-341-vtdf.onrender.com/api-docs HTTP/1.1
