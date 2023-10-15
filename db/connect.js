@@ -28,19 +28,3 @@ const getDb = () => {
 };
 
 module.exports = { initDb, getDb };
-
-// const MongoClient = require('mongodb').MongoClient;
-
-// async function main(){
-//     const uri = "";
-//     const client = new MongoClient(uri);
-//     try{
-//         await client.connect();}
-//     catch(e){
-//         console.error(e);
-//     } finally{
-//         await client.close();
-//     }
-// };
-
-// main().catch(console.error);
